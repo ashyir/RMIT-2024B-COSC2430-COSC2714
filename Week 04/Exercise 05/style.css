@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+
+header,
+footer {
+    background-color: #d2b48c;
+    text-align: center;
+    padding: 1em;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #e0ffff;
+}
+
+.column {
+    flex: 1 1 100%;
+    box-sizing: border-box;
+    padding: 1em;
+    border: 1px solid #b0c4de;
+    background-color: #d3d3d3;
+    margin: 0.5em;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .column {
+        flex: 1 1 48%;
+    }
+}
+
+@media (min-width: 1200px) {
+    .column {
+        flex: 1 1 30%;
+    }
+}

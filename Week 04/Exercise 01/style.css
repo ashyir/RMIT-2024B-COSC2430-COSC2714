@@ -1,0 +1,58 @@
+/* Apply the Google Fonts */
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Different font sizes for each heading level */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 15pt;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 30vh;
+}
+
+h6 {
+    font-size: 20vw;
+}
+
+/* Other text styling */
+p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* Link styles */
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

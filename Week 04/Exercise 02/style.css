@@ -1,0 +1,36 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    width: 100%;
+    border: 1px solid #000;
+}
+
+/* Main section layout */
+#main {
+    display: flex;
+    margin: 10px 0px;
+}
+
+#left {
+    width: 30%;
+    min-width: 200px;
+    margin-right: 0px;
+    border: 1px solid #000;
+}
+
+main {
+    flex: 1;
+    margin-left: 0px;
+    border: 1px solid #000;
+}
+
+#right {
+    width: 15%;
+    border: 1px solid #000;
+}
