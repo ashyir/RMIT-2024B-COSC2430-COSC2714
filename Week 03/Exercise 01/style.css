@@ -1,0 +1,58 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.75em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1.25em;
+}
+
+h6 {
+    font-size: 1em;
+}
+
+/* Navigation styles */
+nav li.active a {
+    font-weight: bold;
+    color: #000;
+}
+
+nav a:hover {
+    color: green;
+}
+
+/* Career statement paragraph */
+main>p {
+    font-style: italic;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Education table styles */
+table tr:nth-child(even) {
+    background-color: lightsalmon;
+}
+
+table tr:nth-child(odd) {
+    background-color: lightgreen;
+}

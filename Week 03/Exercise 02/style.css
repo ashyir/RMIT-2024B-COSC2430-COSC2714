@@ -1,0 +1,32 @@
+/* List item colors */
+ol li {
+    color: green;
+}
+
+ol li:first-child {
+    color: red;
+}
+
+ol li:last-child {
+    color: blue;
+}
+
+/* Paragraph first line styles */
+p:first-of-type::first-line {
+    background-color: pink;
+}
+
+p:nth-of-type(2)::first-line,
+p:nth-of-type(3)::first-line {
+    color: lightblue;
+}
+
+/* Text selection background color */
+p::selection {
+    background-color: yellow;
+}
+
+/* Form input styles */
+form input[required] {
+    background-color: lightgreen;
+}
