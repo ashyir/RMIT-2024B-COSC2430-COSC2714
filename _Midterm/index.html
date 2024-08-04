@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Blog Layout</title>
+</head>
+
+<body>
+    <header>
+        <img src="https://img.freepik.com/premium-vector/cartoon-boy-scout-holding-red-flag_29190-5842.jpg"
+            alt="Profile Picture">
+
+        <h1>My Blog</h1>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <main>
+        <aside>
+            <h2>Recent Posts</h2>
+
+            <ul id="recent-posts">
+                <li>Post 1</li>
+                <li>Post 2</li>
+                <li>Post 3</li>
+            </ul>
+        </aside>
+
+        <section id="main-article">
+            <h2>Main Article</h2>
+            <p>This is the main content area where the article will be displayed.</p>
+
+            <form id="subscribe-form" action="#" method="post">
+                <h3>Subscribe to Our Blog</h3>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name">
+
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+
+                <button type="submit">Subscribe</button>
+                <button type="reset">Cancel</button>
+            </form>
+
+            <table id="subscribers-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Date Subscribed</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>2024-07-27</td>
+                    </tr>
+
+                    <tr>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>2024-07-27</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>&copy; 2024 My Blog</footer>
+</body>
+
+</html>
