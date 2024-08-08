@@ -1,0 +1,18 @@
+#message {
+    /* Hide this element. */
+    display: none;
+
+    /* Fixed position at top right corner. */
+    top: 5px;
+    right: 5px;
+    z-index: 1000;
+    position: fixed;
+
+    /* For color. */
+    opacity: 85%;
+    color: whitesmoke;
+    background-color: green;
+
+    padding: 15px;
+    border-radius: 25px;
+}
