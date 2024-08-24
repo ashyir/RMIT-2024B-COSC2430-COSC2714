@@ -5,7 +5,9 @@ const students = [
     { id: 4, name: 'David', grade: 83 },
 ];
 
-// Display the information of each student.
+/*
+Display the information of each student.
+*/
 
 // Method 01.
 for (const student of students) {
@@ -17,9 +19,11 @@ students.forEach(student => {
     console.log(`ID: ${student.id} - Name: ${student.name}`)
 })
 
-// Create a new array based on this array with one more attribute: HD.
-// For this new attribute, it is true if the respective grade is >= 80;
-// otherwise, it is false.
+/*
+Create a new array based on this array with one more attribute: HD.
+For the new attribute, it is true if the respective grade is >= 80; otherwise, it is false.
+*/
+
 const studentsWithHD = students.map(student => {
     return {
         ...student,
@@ -27,19 +31,26 @@ const studentsWithHD = students.map(student => {
     }
 })
 
+console.log('HD Students:')
 console.log(studentsWithHD)
 
-// Create a new array based on this array,
-// but include only the students whose grades are between 70 and 80.
+/*
+Create a new array based on this array.
+But include only the students whose grades are between 70 and 80.
+*/
+
 const filter_1 = students.filter(student => student.grade >= 70 && student.grade <= 80)
 const filter_2 = students.filter(student => student.name.startsWith("B"))
 const filter_3 = students.filter(student => student.name.includes("Alice"))
 const filter_4 = students.filter(student => student.id === 1)
 
+console.log('Filter:')
 console.log(filter_1)
 console.log(filter_4[0])
 
-// Return the average score of all students.
+/*
+Return the average score of all students.
+*/
 
 // Method 01
 let totalScore_1 = 0
