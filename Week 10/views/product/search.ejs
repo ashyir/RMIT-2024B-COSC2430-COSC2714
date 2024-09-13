@@ -1,0 +1,23 @@
+<%- include('../partials/header', { title: 'Search Product' }) %>
+    <div class="container">
+        <h2 class="text-center mb-3">Search for a Product</h2>
+        <form action="/product/search" method="get" class="form-inline justify-content-center">
+            <div class="form-floating">
+                <input type="text" class="form-control mb-3" id="name" name="name" placeholder="Product Name">
+                <label for="name">Product Name</label>
+            </div>
+
+            <button type="submit" class="btn btn-success mb-3">Search</button>
+        </form>
+
+        <ul class="list-group">
+            <% products.forEach(product=> { %>
+                <li class="list-group-item">
+                    <a href="/product/<%= product.id %>">
+                        <%= product.name %>
+                    </a> - $<%= product.price %>
+                </li>
+                <% }) %>
+        </ul>
+    </div>
+    <%- include('../partials/footer') %>
