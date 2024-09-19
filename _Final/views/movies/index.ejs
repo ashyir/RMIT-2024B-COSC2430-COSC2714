@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+    <form method="GET" action="/" class="mb-3">
+        <div class="input-group">
+            <select class="form-select" name="genre">
+                <% genres.forEach(genre=> { %>
+                    <option value="<%= genre %>" <% if(genre===selectedGenre) { %> selected <% } %>>
+                            <%= genre %>
+                    </option>
+                    <% }) %>
+            </select>
+
+            <button type="submit" class="btn btn-outline-success">Filter</button>
+        </div>
+    </form>
+
+    <div class="row">
+        <% movies.forEach(movie=> { %>
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <%= movie.title %>
+                        </h5>
+                        <p class="card-text"><strong>Year:</strong>
+                            <%= movie.year %>
+                        </p>
+                        <p class="card-text"><strong>Genre:</strong>
+                            <%= movie.genre %>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+    </div>
+    <%- include('../partials/footer') %>
